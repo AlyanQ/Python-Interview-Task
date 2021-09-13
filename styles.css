@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+    font-family: 'Open Sans', 'Sans Serif';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
+#heading {
+    font-size: 5vh;
+    font-weight: 600;
+}
+
+#imageContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5vh 0;
+}
+
+.myCustomButton {
+    transition: all 0.4s;
+    background-color: #FFFFFF;
+    margin: 5vw;
+    padding: 16px;
+    width: 40vh;
+    height: 40vh;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #B3B3B3;
+}
+
+.myCustomButton:hover {
+    box-shadow: #000000aa 0px 0px 10px;
+} 
+
+#tshirt1:hover {
+    background-color: #77BEEB11;
+}
+
+#tshirt1:active {
+    background-color: #77BEEBaa;
+}
+
+#tshirt2:hover {
+    background-color: #ED853A11;
+}
+
+#tshirt2:active {
+    background-color: #ED853Aaa;
+}
+
+#labelSpan {
+    font-size: 4vh;
+    font-weight: 400;
+}
+
+.measurments_btn {
+    transition: all 0.4s;
+    background-color: #6f928a;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 25px;
+    border-radius: 5px;
+    border: 1px solid;
+    cursor: pointer;
+}

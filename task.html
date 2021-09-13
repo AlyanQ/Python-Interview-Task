@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Importing jQuery from Google CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Importing custom css from file -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- jQuery code to alter the pcode value and send to receiver -->
+        <script type="text/javascript">
+            window.onload = function () {
+                var receiver = document.getElementById('receiver').contentWindow;
+                jQuery('body').on('click', '.myCustomButton', function () {
+                    var pcode = jQuery(this).attr("bid");
+
+                    // Custom code to display the pcode of the current item clicked
+                    $('#labelSpan').text(`P Code is ${pcode}`); 
+                    $('.measurments_btn').attr("data-sku", pcode);
+                    receiver.postMessage(pcode, 'https://widget.viubox.com/index.html');
+                });
+            }
+        </script>
+    </head>
+
+    <body>
+        <span id="heading">Interview Task</span>
+        
+        <!-- Displaying two images with SKU's input in the bid attribute -->
+        <div id="imageContainer">
+            <img src="tshirt1.png" id="tshirt1" class="myCustomButton" bid="F01-XXL_50" />
+            <img src="tshirt2.png" id="tshirt2" class="myCustomButton" bid="F02-XXL_50" />
+        </div>
+
+        <!-- Code to display the pcode -->
+        <span id="labelSpan"></span>
+        <p class="measurments_btn" href="javascript:void(0)" data-sku="null" >How Does It Fit On You</p> 
+        <p id="threed_btn_id" class="measurments_btn" href="javascript:void(0)" >Try In 3D</p>
+    </body>
+
+    <footer>
+        
+
+        <!-- Importing viubox embed.js file -->
+        <!-- This is done in the footer as the embed file requires the body to be initialised first
+             to function -->
+        <script type="text/javascript" src="https://widget.viubox.com/js/embed.js"></script>
+        
+    </footer>
+</html>

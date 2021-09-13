@@ -1,6 +1,6 @@
-﻿#**Python Interview Task**
+﻿# **Python Interview Task**
  
- ###Task List
+ ### Task List
 - [x] Create an HTML page with two images and SKU numbers as below.
       SKUs:
       F02-XXL_50

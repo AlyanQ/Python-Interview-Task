@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 5vh 0;
+    margin: 1vh 0;
 }
 
 .myCustomButton {
@@ -30,8 +30,8 @@ body {
     background-color: #FFFFFF;
     margin: 5vw;
     padding: 16px;
-    width: 40vh;
-    height: 40vh;
+    width: 35vh;
+    height: 35vh;
     cursor: pointer;
     border-radius: 8px;
     border: 1px solid #B3B3B3;
@@ -66,13 +66,14 @@ body {
     transition: all 0.4s;
     background-color: #6f928a;
     color: white;
-    padding: 10px 32px;
+    padding: 10px 16px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     font-size: 16px;
     font-weight: 400;
-    margin-top: 25px;
+    margin-top: 10px;
     border-radius: 5px;
     border: 1px solid;
     cursor: pointer;

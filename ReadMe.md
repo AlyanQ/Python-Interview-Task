@@ -12,3 +12,4 @@
 
 - [x] In case, any of the pictures is clicked, it should a assign the corresponding SKU number to the pcode value mentioned in the instructions.
 
+### Note: The webpage is not optimised for Mobile devices.
